@@ -43,7 +43,7 @@ function App() {
       <footer className={`footer ${isVisible ? 'slide-up-footer' : ''}`}>
         <div className="contact-info">
           <div className="contact-item">
-            <a href="tel:+79199158685">+7 (919) 915-86-85</a>
+            <a href="tel:+79199168685">+7 (919) 916-86-85</a>
           </div>
           <div className="contact-item">
             <a href="mailto:terafit.sport@yandex.ru?subject=Вопрос о продукции Терафит">terafit.sport@yandex.ru</a>
