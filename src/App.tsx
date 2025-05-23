@@ -1,0 +1,56 @@
+import logo from '/logo.svg'
+import './App.css'
+import { useEffect, useState } from 'react';
+
+function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  return (
+    <section className="app">
+      <div className={`logo-container ${isVisible ? 'slide-down' : ''}`}>
+        <img
+          src={logo}
+          alt="logo"
+          className="logo"
+          loading="lazy"
+        />
+      </div>
+
+      <main className="content">
+        <div className={`description ${isVisible ? 'slide-up' : ''}`}>
+          <h1>Терафит - производство спортивных тренажеров</h1>
+          <p>
+            Производитель профессиональных тренажеров и комплектующих для фитнес-клубов,
+            реабилитационных центров и домашнего использования
+          </p>
+        </div>
+
+        <div className={`download-section ${isVisible ? 'fade-in' : ''}`}>
+          <a
+            href="/logo.svg"
+            className="download-link"
+          >
+            Каталог товаров
+          </a>
+        </div>
+      </main>
+
+      <footer className={`footer ${isVisible ? 'slide-up-footer' : ''}`}>
+        <div className="contact-info">
+          <div className="contact-item">
+            <a href="tel:+79199158685">+7 (919) 915-86-85</a>
+          </div>
+          <div className="contact-item">
+            <a href="mailto:terafit.sport@yandex.ru?subject=Вопрос о продукции Терафит">terafit.sport@yandex.ru</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  )
+}
+
+export default App
