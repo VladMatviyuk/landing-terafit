@@ -93,6 +93,7 @@
 .footer {
   grid-area: footer;
   padding: 30px 20px;
+  margin-bottom: 80px;
   transform: translateY(100%);
   transition: transform 1s ease-out 0.9s;
 }
@@ -144,6 +145,7 @@
 
   .footer {
     padding: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -158,5 +160,8 @@
 
   .contact-item p {
     font-size: 0.9rem;
+  }
+  .footer {
+    margin-bottom: 50px;
   }
 }

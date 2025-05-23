@@ -31,8 +31,9 @@ function App() {
 
         <div className={`download-section ${isVisible ? 'fade-in' : ''}`}>
           <a
-            href="/logo.svg"
+            href="/terafit_catalog.pdf"
             className="download-link"
+            target="_blank"
           >
             Каталог товаров
           </a>
